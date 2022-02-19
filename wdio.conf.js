@@ -1,4 +1,4 @@
-const allure = require('allure-commandline');
+// const allure = require('allure-commandline');
 
 exports.config = {
 	// ====================
@@ -307,7 +307,7 @@ exports.config = {
 	// onComplete: function(exitCode, config, capabilities, results) {
 	// },
 
-	onComplete: function () {
+	/* onComplete: function () {
 		const reportError = new Error('Could not generate Allure report');
 		const generation = allure(['generate', 'allure-results', '--clean']);
 		return new Promise((resolve, reject) => {
@@ -324,7 +324,7 @@ exports.config = {
 				resolve();
 			});
 		});
-	},
+	}, */
 
 	/**
 	 * Gets executed when a refresh happens.
